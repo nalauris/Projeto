@@ -1,0 +1,362 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* header */
+header{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* CABEÇALHO */
+.filtersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.estiloGeralBotoes{
+    border: none;
+    margin-right: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.estiloGeralBotoes {
+    background-color: #F3FBF9;
+    color: #12B886;
+}
+.estiloGeralBotoes:hover {
+    background-color: #12B886;
+    color: white;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.campoBuscaPorNome {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: #F1F3F5;
+    padding: 0 10px;
+    margin-left: 100px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.estiloGeralBotoes-bnt-busca {
+    background-color: #12B886;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* CONTEÚDO */
+
+
+.containerListaProdutos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.containerListaProdutos ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.liCard {
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    transition: ease-in-out .1s;
+    width: 304px;
+    height: 325px;
+}
+
+.liCard:hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.containerListaProdutos ul li img {
+    width: 274px;
+    height: 175px;
+}
+
+.containerListaProdutos ul li h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+.liComponentes {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    
+}
+
+.containerListaProdutos ul li p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.containerListaProdutos ul li span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+.liComponentes{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #868E96;
+    text-align: left;
+}
+.divProd{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.divCarac{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.divCompra{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.divCompra button{
+    border: none;
+    margin: 10px;
+    width: 71px;
+    height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    color: #12B886;
+    cursor: pointer;
+    background: rgba(18, 184, 134, 0.05);
+    border: 1.5px solid rgba(18, 184, 134, 0.05);
+    border-radius: 8px;
+    align-self: flex-end;
+}
+
+
+/* PREÇO TOTAL */
+.containerPrecoTotal{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+
+}
+.containerPrecoTotal p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.containerPrecoTotal p span{
+    width: 82px;
+    height: 34px; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+}
+
+.divFixa{
+   
+    width: 290px;
+    height: 52px;
+    background: #12B886;
+    border-radius: 12px 12px 0px 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.divSemItem{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 289.09px;
+    height: 268.25px;
+    background: #F8F9FA;
+    border-radius: 0px 0px 12px 12px;
+}
+
+
+.hidden{
+    display: none;
+}
+.carrinhoCheio{
+    display: flex;
+    flex-direction: column;
+}
+.tagProductUl{
+    background: #F5F5F5;
+    overflow-y: scroll;
+    width: 289.09px;
+    height: 300px;
+    background-color: #F5F5F5;
+}
+.cardProdutoCarrinhoLi{
+    width: 269.09px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgCart{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+.carrinhoCheioH2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.carrinhoCheioP{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+margin-top: 5px;
+color: #868E96;
+}
+.carrinhoCheioH3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.carrinhoCheioBtn{
+    margin-left:10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.carrinhoCheioDiv{
+    width: 289.09px;
+    height: 100px;
+    background: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+
+
+}
+
+.carrinhoCheio_DivQnt{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 13px;
+    color: #000000;
+
+}
+.carrinhoCheio_DivTotal{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 13px;
+    color: #000000;
+
+}
+.carrinhoCheioDescr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
