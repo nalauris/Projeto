@@ -50,6 +50,7 @@ function montarListaProdutos(listaProdutos) {
         divCarac.classList.add("divCarac");
         divCompra.classList.add("divCompra");
         li.classList.add("liCard");
+        
 
         produto.componentes.forEach((componentes) =>{
             const liInfos = document.createElement('li');
